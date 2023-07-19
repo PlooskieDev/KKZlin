@@ -1,0 +1,36 @@
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-guide-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+}
+
+.side-bar {
+    width: 15rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.side-bar-mobile {
+    width: 20rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.side-bar-cross-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.side-bar-logo {
+    width: 2rem;
+    margin-right: 0.5rem;
+}

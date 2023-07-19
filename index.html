@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Zlín - Příluky</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/sheet.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+</head>
+
+<body>
+
+    <button class="btn btn-dark btn-lg d-xxl-none mobile-guide-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-list"
+            viewBox="0 0 16 16">
+            <path
+                d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+            <path
+                d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+        </svg>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close side-bar-cross-btn" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="content flex-shrink-0 p-3 side-bar-mobile">
+                <a href="/"
+                    class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                    <img class="side-bar-logo" src="img/logoTraced.png"></img>
+                    <span class="fs-5 fw-semibold">KK Zlín - Příluky</span>
+                </a>
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <a href="#" class="btn">
+                            Aktuality
+                        </a>
+                    </li>
+
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="true">
+                            O klubu
+                        </button>
+                        <div class="collapse show" id="about-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="html/About/member.html"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jak se
+                                        stát členem klubu?</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Členové
+                                        klubu</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Brigády</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#training-collapse" aria-expanded="true">
+                            Výcvik
+                        </button>
+                        <div class="collapse show" id="training-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Školka pro
+                                        štěňata</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Služební
+                                        výcvik</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Agility</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#events-collapse" aria-expanded="true">
+                            Akce
+                        </button>
+                        <div class="collapse show" id="events-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Plánované
+                                        akce 2015</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Výsledky</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="btn">
+                            Fotogalerie
+                        </a>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#links-collapse" aria-expanded="true">
+                            Odkazy
+                        </button>
+                        <div class="collapse show" id="links-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Osobní
+                                        stránky našich členů</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Stránky
+                                        dalších organizací</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <a href="uh" class="btn">
+                            Kontakty
+                        </a>
+                    </li>
+                    <li class="border-top my-3"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                        </svg>
+                        <span class="visually-hidden">Home</span>
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Aktuality</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="content flex-shrink-0 p-3 d-none d-xxl-block side-bar">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+            <img class="side-bar-logo" src="img/logoTraced.png"></img>
+            <span class="fs-5 fw-semibold">KK Zlín - Příluky</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <a href="#" class="btn">
+                    Aktuality
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                    data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="true">
+                    O klubu
+                </button>
+                <div class="collapse show" id="about-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="html/About/member.html"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jak se
+                                stát členem klubu?</a>
+                        </li>
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Členové
+                                klubu</a>
+                        </li>
+                        <li><a href="#"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Brigády</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                    data-bs-toggle="collapse" data-bs-target="#training-collapse" aria-expanded="true">
+                    Výcvik
+                </button>
+                <div class="collapse show" id="training-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Školka pro
+                                štěňata</a>
+                        </li>
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Služební
+                                výcvik</a>
+                        </li>
+                        <li><a href="#"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Agility</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                    data-bs-toggle="collapse" data-bs-target="#events-collapse" aria-expanded="true">
+                    Akce
+                </button>
+                <div class="collapse show" id="events-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Plánované
+                                akce 2015</a>
+                        </li>
+                        <li><a href="#"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Výsledky</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <a href="#" class="btn">
+                    Fotogalerie
+                </a>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                    data-bs-toggle="collapse" data-bs-target="#links-collapse" aria-expanded="true">
+                    Odkazy
+                </button>
+                <div class="collapse show" id="links-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Osobní
+                                stránky našich členů</a>
+                        </li>
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Stránky
+                                dalších organizací</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <a href="uh" class="btn">
+                    Kontakty
+                </a>
+            </li>
+            <li class="border-top my-3"></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <h1>Aktuality</h1>
+
+        <div class="card text-center" style="margin-bottom: 2rem;">
+            <div class="card-header">
+                <b>Školka pro štěňata a socializace štěňat</b>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Školka pro štěňata a socializace štěňat</h5>
+                <p class="card-text">
+                    Je nám líto, ale "jarní kurz školky" pro štěňata, ani socializace štěňat, se letos
+                    konat nebude.
+                    O tom, zda a za jakých podmínek bude otevřený "podzimní kurz školky pro štěňata a socializace
+                    štěňat" se rozhodne (podle
+                    aktuální virové situace) až během měsíce srpna.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days1"></b>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days2"></b>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days3"></b>
+            </div>
+        </div>
+
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.544688433083!2d17.70252716130837!3d49.22186612085847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471373cb112942bd%3A0x56878ce3acb738dc!2zQ3ZpxI3DoWsgS3lub2xvZ2lja8O9IGtsdWIgWmzDrW4!5e0!3m2!1scs!2scz!4v1689703578097!5m2!1scs!2scz"
+            width="100%" height="200" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+        </footer>
+    </div>
+
+</body>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="js/sidebars.js"></script>
+
+</html>
