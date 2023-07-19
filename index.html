@@ -15,6 +15,26 @@
 
 <body>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ale ne</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nemáme Instagram :(
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-xxl-none" style="margin-bottom: 5rem;"></div>
+
     <button class="btn btn-dark btn-lg d-xxl-none mobile-guide-btn" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-list"
@@ -41,7 +61,7 @@
                 </a>
                 <ul class="list-unstyled ps-0">
                     <li class="mb-1">
-                        <a href="#" class="btn">
+                        <a href="html/news.html" class="btn">
                             Aktuality
                         </a>
                     </li>
@@ -129,7 +149,7 @@
                         </div>
                     </li>
                     <li class="mb-1">
-                        <a href="uh" class="btn">
+                        <a href="#" class="btn">
                             Kontakty
                         </a>
                     </li>
@@ -152,9 +172,6 @@
                         <span class="visually-hidden">Home</span>
                     </a>
                 </li>
-                <li class="breadcrumb-item">
-                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Aktuality</a>
-                </li>
             </ol>
         </nav>
     </div>
@@ -166,7 +183,7 @@
         </a>
         <ul class="list-unstyled ps-0">
             <li class="mb-1">
-                <a href="#" class="btn">
+                <a href="html/news.html" class="btn">
                     Aktuality
                 </a>
             </li>
@@ -248,7 +265,7 @@
                 </div>
             </li>
             <li class="mb-1">
-                <a href="uh" class="btn">
+                <a href="#" class="btn">
                     Kontakty
                 </a>
             </li>
@@ -258,87 +275,26 @@
 
     <div class="container">
 
-        <h1 class="text-center bottom-margin">Aktuality</h1>
-
-        <div class="card text-center bottom-margin">
-            <div class="card-header" style="background-color: var(--primary); color: white;">
-                Školka pro štěňata a socializace štěňat
-            </div>
-            <div class="card-body" style="background-color: var(--secondary);">
-                <h5 class="card-title">Školka pro štěňata a socializace štěňat</h5>
-                <p class="card-text">
-                    Je nám líto, ale "jarní kurz školky" pro štěňata, ani socializace štěňat, se letos
-                    konat nebude.<br>
-                    O tom, zda a za jakých podmínek bude otevřený "podzimní kurz školky pro štěňata a socializace
-                    štěňat" se rozhodne (podle
-                    aktuální virové situace) až během měsíce srpna.
-                </p>
-            </div>
-            <div class="card-footer text-body-secondary" style="background-color: var(--primary);">
-                <b id="days1" style="color: white;"></b>
-            </div>
+        <div class="centered-div" style="margin-top: 3rem; flex-direction: column;">
+            <img src="img/logo.png" class="img-fluid">
+            <h1 style="margin-top: 2rem;">Vítejte na stránkách Kynologického klubu Zlín!</h1>
         </div>
 
-        <div class="card text-center bottom-margin">
-            <div class="card-header">
-                Termíny zkoušek a propozice - PODZIM 2019
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" style="margin-bottom: 1rem;">Termíny zkoušek a propozice - PODZIM 2019</h5>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>Sem dáme nějaké motto, bude to hezky vypadat</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Michael Pluskal
+            </figcaption>
+        </figure>
 
-                <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                    <a href="pdf/280919zkouskymix.pdf" target="_blank" class="btn btn-success"
-                        style="margin-bottom: 0.5rem;">28.9.2019
-                        Zkoušky NZŘ
-                        nebo MZŘ propozice</a>
-                    <a href="#" class="btn btn-dark" style="margin-bottom: 0.5rem;">19.10.2019 Zkoušky KJ Brno
-                        propozice</a>
-                    <a href="#" class="btn btn-dark" style="margin-bottom: 0.5rem;">26.10.2019 Zkoušky NZŘ nebo MZŘ
-                        propozice</a>
-                </div>
-            </div>
-            <div class="card-footer text-body-secondary">
-                <b id="days2"></b>
-            </div>
-        </div>
+        <h1 class="text-center" style="margin-top: 3rem; margin-bottom: 3rem;">Kde nás najdete?</h1>
 
-        <div class="card text-center bottom-margin">
-            <div class="card-header">
-                9.11.2018 členská schůze
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">9.11.2018 členská schůze</h5>
-                <p class="card-text">
-                    <b>Členská schůze bude 9.11.2018 od 18.30 v resturaci U Barcuchů.</b><br>
-                    Pro potvrzení své účasti pište Hance Sklenaříkové na fb do skupiny nebo SMS či email.<br>
-                    Kdo má zájem si po schůzi zahrát bowling prosím též info do zprávy.<br>
-                </p>
-            </div>
-            <div class="card-footer text-body-secondary">
-                <b id="days3"></b>
-            </div>
-        </div>
-
-        <div class="card text-center bottom-margin">
-            <div class="card-header">
-                Jarní brigáda
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Jarní brigáda</h5>
-                <p class="card-text">
-                    Jarní brigáda bude <b>21.4.2018 od 10:00</b> na cvičáku.<br>
-                    Potvrzení své účastí pište na FB nebo Hance Sklenaříkové na mail.<br>
-                </p>
-            </div>
-            <div class="card-footer text-body-secondary">
-                <b id="days4"></b>
-            </div>
-        </div>
-
-        <!-- <iframe
+        <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.544688433083!2d17.70252716130837!3d49.22186612085847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471373cb112942bd%3A0x56878ce3acb738dc!2zQ3ZpxI3DoWsgS3lub2xvZ2lja8O9IGtsdWIgWmzDrW4!5e0!3m2!1scs!2scz!4v1689703578097!5m2!1scs!2scz"
-            width="100%" height="200" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            width="100%" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            style="border-radius: 1rem;"></iframe>
 
         <footer class="py-5">
             <div class="d-flex flex-row justify-content-between py-4 my-4 border-top">
@@ -355,7 +311,7 @@
                         </a>
                     </li>
                     <li class="ms-3">
-                        <a class="link-body-emphasis" href="#">
+                        <a class="link-body-emphasis" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="currentColor"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path
@@ -376,6 +332,7 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
+<script src="js/global.js"></script>
 <script src="js/sidebars.js"></script>
 
 </html>

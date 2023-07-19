@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KK Zlín</title>
-    <link rel="icon" href="../../img/logo.png">
-    <link rel="stylesheet" href="../../css/sheet.css">
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/colors.css">
-    <link rel="stylesheet" href="../../css/sidebars.css">
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/sheet.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/sidebars.css">
 </head>
 
 <body>
@@ -56,12 +56,12 @@
             <div class="content flex-shrink-0 p-3 side-bar-mobile">
                 <a href="/"
                     class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-                    <img class="side-bar-logo" src="../../img/logoTraced.png"></img>
+                    <img class="side-bar-logo" src="../img/logoTraced.png"></img>
                     <span class="fs-5 fw-semibold">KK Zlín - Příluky</span>
                 </a>
                 <ul class="list-unstyled ps-0">
                     <li class="mb-1">
-                        <a href="../news.html" class="btn">
+                        <a href="#" class="btn">
                             Aktuality
                         </a>
                     </li>
@@ -73,11 +73,9 @@
                         </button>
                         <div class="collapse show" id="about-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li>
-                                    <a href="#"
+                                <li><a href="../html/About/member.html"
                                         class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jak se
-                                        stát členem klubu?
-                                    </a>
+                                        stát členem klubu?</a>
                                 </li>
                                 <li><a href="#"
                                         class="link-body-emphasis d-inline-flex text-decoration-none rounded">Členové
@@ -165,7 +163,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
                 <li class="breadcrumb-item">
-                    <a class="link-body-emphasis" href="../../index.html">
+                    <a class="link-body-emphasis" href="../index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-house-door-fill" viewBox="0 0 16 16">
                             <path
@@ -175,10 +173,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a class="link-body-emphasis fw-semibold text-decoration-none">O klubu</a>
-                </li>
-                <li class="breadcrumb-item active">
-                    <a>Jak se stát členem klubu?</a>
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Aktuality</a>
                 </li>
             </ol>
         </nav>
@@ -186,12 +181,12 @@
 
     <div class="content flex-shrink-0 p-3 d-none d-xxl-block side-bar">
         <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-            <img class="side-bar-logo" src="../../img/logoTraced.png"></img>
+            <img class="side-bar-logo" src="../img/logoTraced.png"></img>
             <span class="fs-5 fw-semibold">KK Zlín - Příluky</span>
         </a>
         <ul class="list-unstyled ps-0">
             <li class="mb-1">
-                <a href="../news.html" class="btn">
+                <a href="#" class="btn">
                     Aktuality
                 </a>
             </li>
@@ -203,7 +198,8 @@
                 </button>
                 <div class="collapse show" id="about-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jak se
+                        <li><a href="../html/About/member.html"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Jak se
                                 stát členem klubu?</a>
                         </li>
                         <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Členové
@@ -282,20 +278,82 @@
 
     <div class="container">
 
-        <h1 class="text-center bottom-margin">Jak se stát členem klubu?</h1>
+        <h1 class="text-center bottom-margin">Aktuality</h1>
 
-        <h5 class="text-center bottom-margin">Musíte zmáčknout tlačítko "Chci být členem!" přesně 9999x</h5>
-
-        <div id="liveAlertPlaceholder"></div>
-        <div class="centered-div">
-            <button type="button" class="btn btn-success" id="liveAlertBtn">Chci být
-                členem!</button>
+        <div class="card text-center bottom-margin">
+            <div class="card-header" style="background-color: var(--primary); color: white;">
+                Školka pro štěňata a socializace štěňat
+            </div>
+            <div class="card-body" style="background-color: var(--secondary);">
+                <h5 class="card-title">Školka pro štěňata a socializace štěňat</h5>
+                <p class="card-text">
+                    Je nám líto, ale "jarní kurz školky" pro štěňata, ani socializace štěňat, se letos
+                    konat nebude.<br>
+                    O tom, zda a za jakých podmínek bude otevřený "podzimní kurz školky pro štěňata a socializace
+                    štěňat" se rozhodne (podle
+                    aktuální virové situace) až během měsíce srpna.
+                </p>
+            </div>
+            <div class="card-footer text-body-secondary" style="background-color: var(--primary);">
+                <b id="days1" style="color: white;"></b>
+            </div>
         </div>
 
-        <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.544688433083!2d17.70252716130837!3d49.22186612085847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471373cb112942bd%3A0x56878ce3acb738dc!2zQ3ZpxI3DoWsgS3lub2xvZ2lja8O9IGtsdWIgWmzDrW4!5e0!3m2!1scs!2scz!4v1689703578097!5m2!1scs!2scz"
-            width="100%" height="200" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <div class="card text-center bottom-margin">
+            <div class="card-header">
+                Termíny zkoušek a propozice - PODZIM 2019
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 1rem;">Termíny zkoušek a propozice - PODZIM 2019</h5>
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <a href="../pdf/280919zkouskymix.pdf" target="_blank" class="btn btn-success"
+                        style="margin-bottom: 0.5rem;">28.9.2019
+                        Zkoušky NZŘ
+                        nebo MZŘ propozice</a>
+                    <a href="#" class="btn btn-dark" style="margin-bottom: 0.5rem;">19.10.2019 Zkoušky KJ Brno
+                        propozice</a>
+                    <a href="#" class="btn btn-dark" style="margin-bottom: 0.5rem;">26.10.2019 Zkoušky NZŘ nebo MZŘ
+                        propozice</a>
+                </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days2"></b>
+            </div>
+        </div>
+
+        <div class="card text-center bottom-margin">
+            <div class="card-header">
+                9.11.2018 členská schůze
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">9.11.2018 členská schůze</h5>
+                <p class="card-text">
+                    <b>Členská schůze bude 9.11.2018 od 18.30 v resturaci U Barcuchů.</b><br>
+                    Pro potvrzení své účasti pište Hance Sklenaříkové na fb do skupiny nebo SMS či email.<br>
+                    Kdo má zájem si po schůzi zahrát bowling prosím též info do zprávy.<br>
+                </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days3"></b>
+            </div>
+        </div>
+
+        <div class="card text-center bottom-margin">
+            <div class="card-header">
+                Jarní brigáda
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Jarní brigáda</h5>
+                <p class="card-text">
+                    Jarní brigáda bude <b>21.4.2018 od 10:00</b> na cvičáku.<br>
+                    Potvrzení své účastí pište na FB nebo Hance Sklenaříkové na mail.<br>
+                </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <b id="days4"></b>
+            </div>
+        </div>
 
         <footer class="py-5">
             <div class="d-flex flex-row justify-content-between py-4 my-4 border-top">
@@ -332,33 +390,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-<script src="../../js/index.js"></script>
-<script src="../../js/global.js"></script>
-<script src="../../js/sidebars.js"></script>
-
-
-<!-- Mini-game -->
-<!-- Delete later -->
-<script>
-    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-    const appendAlert = (message, type) => {
-        const wrapper = document.createElement('div')
-        wrapper.innerHTML = [
-            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-            `   <div>${message}</div>`,
-            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-            '</div>'
-        ].join('')
-
-        alertPlaceholder.append(wrapper)
-    }
-
-    const alertTrigger = document.getElementById('liveAlertBtn')
-    if (alertTrigger) {
-        alertTrigger.addEventListener('click', () => {
-            appendAlert('Mačkej!', 'success')
-        })
-    }
-</script>
+<script src="../js/news.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/sidebars.js"></script>
 
 </html>
