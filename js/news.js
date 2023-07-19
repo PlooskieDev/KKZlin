@@ -1,14 +1,9 @@
 const dates = [new Date("07/19/2023"), new Date("07/07/2023"), new Date("07/01/2023"), new Date("05/15/2023")];
 var calcDates = [];
 
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-})
-
 document.body.onload = function () {
+
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 
     for (let i = 0; i < dates.length; i++) {
 
