@@ -264,8 +264,13 @@
 
         <h1 class="text-center bottom-margin">Jak se stát členem klubu?</h1>
 
+        <h5 class="text-center bottom-margin">Musíte zmáčknout tlačítko "Chci být členem!" přesně 9999x</h5>
+
         <div id="liveAlertPlaceholder"></div>
-        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+        <div class="centered-div">
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Chci být
+                členem!</button>
+        </div>
 
         <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.544688433083!2d17.70252716130837!3d49.22186612085847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471373cb112942bd%3A0x56878ce3acb738dc!2zQ3ZpxI3DoWsgS3lub2xvZ2lja8O9IGtsdWIgWmzDrW4!5e0!3m2!1scs!2scz!4v1689703578097!5m2!1scs!2scz"
@@ -327,7 +332,7 @@
     const alertTrigger = document.getElementById('liveAlertBtn')
     if (alertTrigger) {
         alertTrigger.addEventListener('click', () => {
-            appendAlert('Nice, you triggered this alert message!', 'success')
+            appendAlert('Mačkej!', 'success')
         })
     }
 </script>
