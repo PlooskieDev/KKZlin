@@ -24,6 +24,10 @@ function DisplayDate(date, elementId) {
         document.getElementById(elementId).innerHTML = "Nové!";
         return;
     }
+    else if (date > 1 && date < 2) {
+        document.getElementById(elementId).innerHTML = "Před " + Math.round(date) + " dnem";
+        return;
+    }
     else {
         document.getElementById(elementId).innerHTML = "Před " + Math.round(date) + " dny";
         return;

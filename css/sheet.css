@@ -39,3 +39,18 @@
     width: 2rem;
     margin-right: 0.5rem;
 }
+
+.news-card-header {
+    background-color: var(--card-header) !important;
+    color: var(--white) !important;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.news-card-body {
+    background-color: var(--card-body);
+}
+
+.news-card-footer {
+    background-color: var(--card-days) !important;
+}
