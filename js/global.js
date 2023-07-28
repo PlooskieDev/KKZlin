@@ -1,25 +1,40 @@
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
-let touchstartX = 0
-let touchendX = 0
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
 
-function swipe() {
-    if (touchendX > touchstartX) {
-        if (touchendX > -1200 && touchstartX < -1350) {
-            document.getElementById('swipeButton').dispatchEvent(new Event('click'));
-        }
+var xDown = null;
+var yDown = null;
+
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+};
+
+function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+        return;
     }
-}
 
-document.addEventListener('touchstart', e => {
-    touchstartX = e.changedTouches[0].screenX
-})
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
 
-document.addEventListener('touchend', e => {
-    touchendX = e.changedTouches[0].screenX
-    swipe()
-})
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) + Math.abs(yDiff) > 150) {
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff < 0) {
+                document.getElementById('swipeButton').dispatchEvent(new Event('click'));
+            }
+        }
+
+        xDown = null;
+        yDown = null;
+    }
+};
 
 myModal.addEventListener('shown.bs.modal', () => {
     myInput.focus()
